@@ -24,3 +24,20 @@ mall learning demo
     移除服务：D:\developer\env\MongoDB\bin\mongod.exe --remove
     ```
     - 客户端robo3t
+
+# 2020/08/10
+
+- 整合RabbitMQ实现延迟消息
+    - 安装Erlang
+    - 安装RabbitMQ
+    - 启动RabbitMQ
+        - sbin目录
+        ```
+        rabbitmq-plugins enable rabbitmq_management  
+        ```
+     - 访问地址查看是否安装成功：http://localhost:15672/
+     - 输入账号密码并登录：guest guest
+     - 创建帐号并设置其角色为管理员：mall mall
+     - 创建一个新的虚拟host为：/mall
+     - 点击mall用户进入用户配置页面
+     - 给mall用户配置该虚拟host的权限
